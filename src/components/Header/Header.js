@@ -13,12 +13,18 @@ function Header() {
         <p className="chris-bio">...a sentence about Chris</p>
       </div>
       <div className="links-container">
-        <p>Home About Live Music Blarg</p>
+        <div className="links">
+          <span className="link home">Home</span>
+          <span className="link about">About</span>
+          <span className="link live">Live</span>
+          <span className="link music">Music</span>
+          <span className="link blarg">Blärg</span>
+        </div>
         <div className="icons">
-          <img src={github} />
-          <img src={insta} />
-          <img src={twitter} />
-          <img src={youtube} />
+          <img src={github} alt="github icon outlined in white"/>
+          <img src={insta} alt="instagram icon outlined in white"/>
+          <img src={twitter} alt="twitter icon outlined in white"/>
+          <img src={youtube} alt="youtube icon outlined in white"/>
         </div>
       </div>
     </nav>

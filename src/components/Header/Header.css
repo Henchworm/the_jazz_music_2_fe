@@ -4,9 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 7.5rem;
+  height: 8rem;
   margin: -0.5rem -0.5rem 1rem -0.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .chris-container {
@@ -26,6 +26,75 @@
   margin-top: 0;
 }
 
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.links {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.link {
+  margin-left: 1.5rem;
+  transition: 0.25s;
+}
+
+.link:hover {
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.home:hover {
+  color: #ff0558;
+  text-shadow: 
+      1.5px 0.5px 0.25px #d92668,
+      2px 1px 0.25px #670eb8;
+}
+
+.about:hover {
+  color: #f9672b;
+    text-shadow: 
+      1.5px 0.5px 0 #d92668, 
+      2px 1px 0 #670eb8;
+}
+
+.live:hover {
+  color: #fdd913;
+   text-shadow: 
+      1.5px 0.5px 0 #ff0558, 
+      2px 1px 0 #670eb8;
+}
+
+.music:hover {
+  color: #01dbc5;
+  text-shadow: 
+      1.5px 0.5px 0 #f1185c, 
+      2px 1px 0 #670eb8;
+}
+
+.blarg:hover {
+  color: #03a1c3;
+  text-shadow: 
+      1.5px 0.5px 0 #d92668, 
+      2px 1px 0 #670eb8;
+}
+
 .icons img {
-  height: 1.75rem;
+  height: 1.6rem;
+  margin: 0 0.5rem;
+  opacity: 0.75;
+  transition: 0.25s;
+}
+
+.icons img:hover {
+  background-color: #670eb8;
+  border-radius: 50% 20% / 10% 20%;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.25s;
 }
