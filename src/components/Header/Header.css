@@ -1,0 +1,27 @@
+.main-navigation {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5rem;
+  margin: -0.5rem -0.5rem 1rem -0.5rem;
+  padding: 0.5rem;
+}
+
+.chris-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chris-name {
+  font-size: 2.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.chris-bio {
+  margin-top: 0;
+}
