@@ -108,3 +108,17 @@
   opacity: 1;
   transition: 0.25s;
 }
+
+@media screen and (max-width: 56.25em) {
+  .links {
+    font-size: 1.25rem;
+  }
+
+  .links a {
+    margin-left: 1.25rem;
+  }
+
+  .icons img {
+    height: 1.3rem;
+  }
+ }
