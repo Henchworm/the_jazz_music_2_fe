@@ -39,46 +39,56 @@
   margin: 0 0.5rem 1rem 0.5rem;
 }
 
-.link {
+.links a {
   margin-left: 1.5rem;
+}
+
+.inactive {
+  color: white;
+  text-decoration: none;
   transition: 0.25s;
 }
 
-.link:hover {
-  cursor: pointer;
-  transition: 0.25s;
-}
-
+.homeactive,
 .home:hover {
   color: #ff0558;
+  text-decoration: none;
   text-shadow: 
       1.5px 0.5px 0.25px #d92668,
       2px 1px 0.25px #670eb8;
 }
 
+.aboutactive,
 .about:hover {
   color: #f9672b;
+  text-decoration: none;
     text-shadow: 
       1.5px 0.5px 0 #d92668, 
       2px 1px 0 #670eb8;
 }
 
+.liveactive,
 .live:hover {
   color: #fdd913;
+  text-decoration: none;
    text-shadow: 
       1.5px 0.5px 0 #ff0558, 
       2px 1px 0 #670eb8;
 }
 
+.musicactive,
 .music:hover {
   color: #01dbc5;
+  text-decoration: none;
   text-shadow: 
       1.5px 0.5px 0 #f1185c, 
       2px 1px 0 #670eb8;
 }
 
+.blargactive,
 .blarg:hover {
   color: #03a1c3;
+  text-decoration: none;
   text-shadow: 
       1.5px 0.5px 0 #d92668, 
       2px 1px 0 #670eb8;

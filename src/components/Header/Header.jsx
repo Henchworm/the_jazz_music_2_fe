@@ -1,3 +1,4 @@
+import { NavLink, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const github = require('../../assets/github.png');
@@ -5,7 +6,9 @@ const insta = require('../../assets/instagram.png');
 const twitter = require('../../assets/twitter.png');
 const youtube = require('../../assets/youtube.png');
 
-function Header() {
+function Header2() {
+  const location = useLocation();
+
   return (
     <nav className="main-navigation">
       <div className="chris-container">
@@ -14,11 +17,11 @@ function Header() {
       </div>
       <div className="links-container">
         <div className="links">
-          <span className="link home">Home</span>
-          <span className="link about">About</span>
-          <span className="link live">Live</span>
-          <span className="link music">Music</span>
-          <span className="link blarg">Blärg</span>
+          <NavLink exact to='/' className={location.pathname === '/' ? 'homeactive home' : 'inactive home'}>Home</NavLink>
+          <NavLink exact to='/about' className={location.pathname === '/about' ? 'aboutactive about' : 'inactive about'}>About</NavLink>
+          <NavLink exact to='/live' className={location.pathname === '/live' ? 'liveactive live' : 'inactive live'}>Live</NavLink>
+          <NavLink exact to='/music' className={location.pathname === '/music' ? 'musicactive music' : 'inactive music'}>Music</NavLink>
+          <NavLink exact to='/blog' className={location.pathname === '/blog' ? 'blargactive blarg' : 'inactive blarg'}>Blärg</NavLink>
         </div>
         <div className="icons">
           <img src={github} alt="github icon outlined in white"/>
@@ -31,4 +34,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header2;
