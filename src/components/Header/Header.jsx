@@ -1,13 +1,35 @@
+import { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import './Header.css';
 
+const hamburger = require('../../assets/hamburger.png');
+const hamx = require('../../assets/hamx.png');
 const github = require('../../assets/github.png');
 const insta = require('../../assets/instagram.png');
 const twitter = require('../../assets/twitter.png');
 const youtube = require('../../assets/youtube.png');
 
-function Header2() {
+function Header() {
+  const [expanded, setExpanded] = useState(false);
+  const ref = useRef(null);
+  const hamburgRef = useRef();
   const location = useLocation();
+
+  useEffect(() => {
+    const listener = (event) => {
+      if (!ref.current || ref.current.contains(event.target) || hamburgRef.current.contains(event.target)) {
+        return;
+      }
+      setExpanded(false);
+    };
+    document.addEventListener("mousedown", listener);
+    document.addEventListener("touchstart", listener);
+
+    return () => {
+      document.removeEventListener("mousedown", listener);
+      document.removeEventListener("touchstart", listener);
+    }
+  }, [ref, setExpanded])
 
   return (
     <nav className="main-navigation">
@@ -15,6 +37,13 @@ function Header2() {
         <h1 className="chris-name">Chris Hewitt</h1>
         <p className="chris-bio">...a sentence about Chris</p>
       </div>
+      {expanded && <div className="dropdown-menu" ref={ref}>
+        <span><NavLink exact to='/' className={location.pathname === '/' ? 'homeactive home' : 'inactive home'}>Home</NavLink></span>
+        <span><NavLink exact to='/about' className={location.pathname === '/about' ? 'aboutactive about' : 'inactive about'}>About</NavLink></span>
+        <span><NavLink exact to='/live' className={location.pathname === '/live' ? 'liveactive live' : 'inactive live'}>Live</NavLink></span>
+        <span><NavLink exact to='/music' className={location.pathname === '/music' ? 'musicactive music' : 'inactive music'}>Music</NavLink></span>
+        <span><NavLink exact to='/blog' className={location.pathname === '/blog' ? 'blargactive blarg' : 'inactive blarg'}>Blärg</NavLink></span>
+      </div>}
       <div className="links-container">
         <div className="links">
           <NavLink exact to='/' className={location.pathname === '/' ? 'homeactive home' : 'inactive home'}>Home</NavLink>
@@ -23,6 +52,7 @@ function Header2() {
           <NavLink exact to='/music' className={location.pathname === '/music' ? 'musicactive music' : 'inactive music'}>Music</NavLink>
           <NavLink exact to='/blog' className={location.pathname === '/blog' ? 'blargactive blarg' : 'inactive blarg'}>Blärg</NavLink>
         </div>
+        <img onClick={() => setExpanded(!expanded)} className="hamburger" src={expanded ? hamx : hamburger} alt="hamburger menu icon" ref={hamburgRef} />
         <div className="icons">
           <img src={github} alt="github icon outlined in white"/>
           <img src={insta} alt="instagram icon outlined in white"/>
@@ -34,4 +64,4 @@ function Header2() {
   );
 }
 
-export default Header2;
+export default Header;
