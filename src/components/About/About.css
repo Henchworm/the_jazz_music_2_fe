@@ -1,0 +1,18 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.about-text {
+  font-size: 1.15rem;
+  margin-left: 1.5rem;
+  width: 30em;
+  transition: 0.25s;
+}
+
+.about-container img {
+  /* border-radius: 50%; */
+  width: 20rem;
+}
