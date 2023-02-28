@@ -55,9 +55,9 @@ function Header() {
         <img onClick={() => setExpanded(!expanded)} className="hamburger" src={expanded ? hamx : hamburger} alt="hamburger menu icon" ref={hamburgRef} />
         <div className="icons">
           <a href="https://chrishewitt.bandcamp.com/" target='_blank'  rel="noreferrer"><img src={bandcamp} alt="bandcamp icon outlined in white"/></a>
-          <a href="https://github.com/Henchworm" target='_blank'  rel="noreferrer"><img src={github} alt="github icon outlined in white"/></a>
           <a href="https://www.instagram.com/golden_bullfrog/" target='_blank'  rel="noreferrer"><img src={insta} alt="instagram icon outlined in white"/></a>
           <a href="https://www.youtube.com/@hewi5134" target='_blank'  rel="noreferrer"><img src={youtube} alt="youtube icon outlined in white"/></a>
+          <a href="https://github.com/Henchworm" target='_blank'  rel="noreferrer"><img src={github} alt="github icon outlined in white"/></a>
         </div>
       </div>
     </nav>
