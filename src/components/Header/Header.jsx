@@ -4,9 +4,9 @@ import './Header.css';
 
 const hamburger = require('../../assets/hamburger.png');
 const hamx = require('../../assets/hamx.png');
+const bandcamp = require('../../assets/bandcamp.png')
 const github = require('../../assets/github.png');
 const insta = require('../../assets/instagram.png');
-const twitter = require('../../assets/twitter.png');
 const youtube = require('../../assets/youtube.png');
 
 function Header() {
@@ -54,10 +54,10 @@ function Header() {
         </div>
         <img onClick={() => setExpanded(!expanded)} className="hamburger" src={expanded ? hamx : hamburger} alt="hamburger menu icon" ref={hamburgRef} />
         <div className="icons">
-          <img src={github} alt="github icon outlined in white"/>
-          <img src={insta} alt="instagram icon outlined in white"/>
-          <img src={twitter} alt="twitter icon outlined in white"/>
-          <img src={youtube} alt="youtube icon outlined in white"/>
+          <a href="https://chrishewitt.bandcamp.com/" target='_blank'  rel="noreferrer"><img src={bandcamp} alt="bandcamp icon outlined in white"/></a>
+          <a href="https://github.com/Henchworm" target='_blank'  rel="noreferrer"><img src={github} alt="github icon outlined in white"/></a>
+          <a href="https://www.instagram.com/golden_bullfrog/" target='_blank'  rel="noreferrer"><img src={insta} alt="instagram icon outlined in white"/></a>
+          <a href="https://www.youtube.com/@hewi5134" target='_blank'  rel="noreferrer"><img src={youtube} alt="youtube icon outlined in white"/></a>
         </div>
       </div>
     </nav>
