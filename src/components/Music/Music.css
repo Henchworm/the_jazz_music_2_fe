@@ -1,0 +1,19 @@
+.music-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0.25rem;
+  grid-row-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.band-card {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 35rem;
+  padding: 0.5rem;
+}
