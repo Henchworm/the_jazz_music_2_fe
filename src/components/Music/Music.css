@@ -1,5 +1,4 @@
 .band-card {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +8,7 @@
 
 .band-card img {
   border-radius: 2rem;
-  height: 22.5rem;
+  height: 25rem;
   width: 32.5rem;
   object-fit: cover;
   transition: 0.25s;
@@ -23,7 +22,10 @@
 
 .band-text h1 {
   font-size: 1.5rem;
+  margin-bottom: 0;
 }
+
+/* Other potential style */
 
 /* .music-section {
   display: grid;
