@@ -1,3 +1,7 @@
 html {
   font-family: Futura, "Helvetica Neue";
 }
+
+section {
+  margin-top: 10rem;
+}

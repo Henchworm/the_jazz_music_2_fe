@@ -7,6 +7,11 @@
   height: 8rem;
   margin: -0.5rem -0.75rem 1rem -0.75rem;
   padding: 0.5rem 1.25rem;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
 }
 
 .chris-container {
@@ -32,6 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  margin-right: 1.5rem;
 }
 
 .links {
