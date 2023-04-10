@@ -41,7 +41,7 @@ function Music() {
         </div>
       </article>
     </section>
-    
+
     /* other potential style: 
     <section className="music-section">
       <article className="band-card">

@@ -16,6 +16,7 @@
 }
 
 .band-text {
+  /* border: 1px solid purple; */
   margin-left: 1.5rem;
   width: 30rem;
   transition: 0.25s;
@@ -79,8 +80,8 @@
 }
 
 /* Other potential style */
-
-/* .music-section {
+/* 
+.music-section {
   display: grid;
   grid-template-columns: repeat(2, 35rem);
   justify-content: center;
@@ -114,6 +115,6 @@
 .band-card p {
   margin-top: 0;
   overflow: scroll;
-  height: 10rem;
+  height: 8rem;
   width: 30rem;
 } */
