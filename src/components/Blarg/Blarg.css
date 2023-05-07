@@ -14,8 +14,40 @@
 }
 
 .posts-container {
-  border: 1px solid black; /* will delete, to outline container as placeholder */
   height: 25rem;
   width: 40rem;
   overflow: scroll;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 53.125rem) {
+  .blog-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .blog-container img {
+    margin: 0 0 1rem 0;
+  }
+
+  .posts-container {
+    margin-bottom: 1rem;
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 37rem) {
+  .posts-container {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 27rem) {
+  .blog-container img {
+    width: 20rem;
+  }
+
+  .posts-container {
+    width: 20rem;
+  }
 }
