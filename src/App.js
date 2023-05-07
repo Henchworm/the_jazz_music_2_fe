@@ -46,7 +46,11 @@ function App() {
           <About />
         </Route>
         <Route exact path="/live">
-          <Live gigs={gigs} />
+          <Live 
+            gigs={gigs} 
+            loading={loading}
+            error={error}
+          />
         </Route>
         <Route exact path="/music">
           <Music />
