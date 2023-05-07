@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { HEADER_BIO_TEXT } from '../../constants';
 import './Header.css';
 
 const hamburger = require('../../assets/hamburger.png');
@@ -35,7 +36,7 @@ function Header() {
     <nav className="main-navigation">
       <div className="chris-container">
         <h1 className="chris-name">Chris Hewitt</h1>
-        <p className="chris-bio">...a sentence about Chris</p>
+        <p className="chris-bio">{HEADER_BIO_TEXT}</p>
       </div>
       {expanded && <div className="dropdown-menu" ref={ref}>
         <span><NavLink exact to='/' className={location.pathname === '/' ? 'homeactive home' : 'inactive home'}>Home</NavLink></span>

@@ -5,3 +5,20 @@ html {
 section {
   margin-top: 10rem;
 }
+
+button {
+  font-family: Futura, "Helvetica Neue";
+  font-size: 1rem;
+  background-color: #670eb8;
+  border: 0.25rem solid black;
+  border-radius: 1rem;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  transition: 0.25s;
+}
+
+button:hover {
+  background-color: #ff0558;
+  cursor: pointer;
+  transition: 0.25s;
+}

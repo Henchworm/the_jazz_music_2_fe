@@ -13,8 +13,6 @@
   transition: 0.25s;
 }
 
-.home-highlight-container {
-  border: 1px solid black; /* will delete, to outline container as placeholder */
-  height: 22rem;
-  width: 30rem;
+.home-highlight-container button {
+  margin-top: 1rem;
 }

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Music.css';
 
 const freshies = require('../../assets/freshies.png');
@@ -6,7 +7,19 @@ const solo = require('../../assets/solo.png');
 const spaceforce = require('../../assets/spaceforce.png');
 
 function Music() {
+  // const [seeBandtext, setSeebandtext] = useState(false);
+
+  // const freshieText = "The Freshman Philosophy Majors hail from Denver, Colorado, where they perform demented original music from the minds of Chris Hewitt (drums), Tim Sanchez (bass), and Chase Hildebrandt (keys). All graduates from Colorado State University's prestigious percussion department, the trio is known for enchanting raps, driving beats and extreme silliness.";
+
+  // const handleClick = () => {
+  //   setSeebandtext(!seeBandtext);
+  // }
+
   return (
+    <section>
+      <h1>I am Music</h1>
+    </section>
+    /* style option 1 
     <section className="music-section">
       <article className="band-card">
         <img src={freshies} alt="The Freshies playing live." />
@@ -40,7 +53,15 @@ function Music() {
           His original compositions have been performed by Witches and Science, Space Force, the Matt Smiley trio, Nebula Ensemble, and the Colorado State Jazz Combo I.</p>
         </div>
       </article>
-    </section>
+    </section> * /
+
+    /* style option 2 <section className="music-section">
+      <article className="band-card">
+        <h1>The Freshman Philosophy Majors</h1>
+        {seeBandtext ? <div className="band-text">{freshieText}</div> : <img src={freshies} alt="The Freshies playing live." />}
+        <button onClick={handleClick}>Learn More</button>
+      </article>
+    </section> * / 
 
     /* other potential style: 
     <section className="music-section">
