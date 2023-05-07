@@ -19,12 +19,9 @@ function Home({ nextGig, loading, error }) {
         <>
           <h1>Next Show: {band_name}</h1>
           <p>{details}</p>
-          <b>Venue: </b>{venue}
-          <br />
-          <b>Date: </b>{`${getDisplayDay(date)} - ${getDisplayDate(date)}`}
-          <br />
-          <b>Time: </b>{getStandardDisplayTime(date)}
-          <br />
+          <span><b>Venue: </b>{venue}</span>
+          <span><b>Date: </b>{`${getDisplayDay(date)} - ${getDisplayDate(date)}`}</span>
+          <span><b>Time: </b>{getStandardDisplayTime(date)}</span>
           <button onClick={handleClick}>Get Tickets!</button>
       </>
       );
