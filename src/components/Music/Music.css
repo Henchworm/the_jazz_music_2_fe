@@ -1,6 +1,4 @@
-/** Style Option 1 **/
-
-/* .band-card {
+.band-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,73 +75,4 @@
   .band-text {
     width: 20rem;
   }
-} */
-
-/* style option 2 */
-/*
-.band-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  transition: 0.25s;
 }
-
-.band-card img {
-  border-radius: 2rem;
-  height: 25rem;
-  width: 32.5rem;
-  object-fit: cover;
-  transition: 0.25s;
-}
-
-.band-text {
-  height: 25rem;
-  width: 32.5rem;
-  transition: 0.25s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-
-/* Other potential style */
-/* 
-.music-section {
-  display: grid;
-  grid-template-columns: repeat(2, 35rem);
-  justify-content: center;
-  transition: 0.25s;
-}
-
-.band-card {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 1rem;
-  padding: 0.5rem;
-}
-
-.band-card img {
-  border-radius: 2rem;
-  height: 18rem;
-  width: 27.5rem;
-  object-fit: cover;
-  transition: 0.25s;
-}
-
-.band-card h1 {
-  font-size: 1.5rem;
-  margin: 0.75rem 0 0.5rem 0;
-}
-
-.band-card p {
-  margin-top: 0;
-  overflow: scroll;
-  height: 8rem;
-  width: 30rem;
-} */

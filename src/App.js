@@ -7,12 +7,13 @@ import Live from './components/Live/Live';
 import Music from './components/Music/Music';
 import Blarg from './components/Blarg/Blarg';
 import BadUrl from './components/BadUrl/BadUrl';
-import { getGigs } from './apiCalls';
+import { getGigs, getBlargPosts } from './apiCalls';
 import './App.css';
 
 function App() {
   const [gigs, setGigs] = useState([]);
   const [nextGig, setNextGig] = useState({});
+  const [blargPosts, setBlargPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -29,6 +30,9 @@ function App() {
         setError(`Oops, that's a ${error.message}. Please refresh and try again!`)
         setLoading(false);
       })
+    
+    getBlargPosts()
+      .then(data => console.log('blarg posts: ', data))
   }, []);
 
   return (

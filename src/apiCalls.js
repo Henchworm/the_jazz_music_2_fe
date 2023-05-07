@@ -1,4 +1,4 @@
-import { BASE_URL, GIGS_PARAM } from "./constants";
+import { BASE_URL, GIGS_PARAM, BLARG_PARAM } from "./constants";
 
 const checkErrors = (response) => {
   if (!response.ok) {
@@ -9,5 +9,10 @@ const checkErrors = (response) => {
 
 export const getGigs = () => {
   return fetch(`${BASE_URL}${GIGS_PARAM}`)
+    .then(response => checkErrors(response))
+}
+
+export const getBlargPosts = () => {
+  return fetch(`${BASE_URL}${BLARG_PARAM}`)
     .then(response => checkErrors(response))
 }

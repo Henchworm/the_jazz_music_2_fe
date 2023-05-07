@@ -17,4 +17,5 @@
   border: 1px solid black; /* will delete, to outline container as placeholder */
   height: 25rem;
   width: 40rem;
+  overflow: scroll;
 }
