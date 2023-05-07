@@ -6,6 +6,11 @@ const chrishome = require('../../assets/chrishome.png');
 function Home({ nextGig, loading, error }) {
   const { band_name, date, details, link, venue } = nextGig;
 
+  const handleClick = () => {
+    const url = link.includes('http') ? link : `https://${link}`;
+    window.open(url, '_blank');
+  }
+
   const renderSection = () => {
     if (loading) {
       return <h1>Loading...</h1>;
@@ -20,9 +25,11 @@ function Home({ nextGig, loading, error }) {
           <br />
           <b>Time: </b>{getStandardDisplayTime(date)}
           <br />
-          <button>Get Tickets!</button>
+          <button onClick={handleClick}>Get Tickets!</button>
       </>
       );
+    } else if (!loading && !error && !nextGig.id) {
+      return <h1>No upcoming shows, yet!</h1>
     } else {
       return null;
     }

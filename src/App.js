@@ -31,8 +31,6 @@ function App() {
       })
   }, []);
 
-  // const loading = gigs.length === 0 && !error;
-
   return (
     <main>
       <Header />
