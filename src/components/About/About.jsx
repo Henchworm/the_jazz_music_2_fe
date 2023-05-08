@@ -1,7 +1,7 @@
 import { ABOUT_TEXT } from '../../constants';
 import './About.css';
 
-const chrisabout = require('../../assets/chrisabout.png');
+const chrisabout = require('../../assets/pages/chrisabout.png');
 
 function About() {
   return (

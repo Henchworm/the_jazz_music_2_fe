@@ -16,10 +16,10 @@ const GAMELAN_DESC = `Based in Denver, Colorado, USA, Gamelan Tunas Mekar is a c
 const SPACEFORCE_DESC = `Space Force, from the mind of Denver guitarist extraordinaire Tucker Smidt, is a off-kilter avant-garde funk band performing original music around Denver's dive bars. The 5-piece band features Adam Bell (tenor), Joe Hoffarth (alto), Tucker Smidt (guitar), Mike Rink (bass), and Chris Hewitt (drums). As one critic said of the group, "they [Space Force] will bring the space funk to your ass."`;
 const CHRIS_DESC = `As a solo performer, Chris Hewitt performs contemporary percussion music, ranging from spectral vibraphone works to meditative triangle solos. His current repertoire includes works by Christopher Deane, Kristen Kuster, Sarah Hennies, Tim Sanchez, Alvin Lucier, John Lane, as well as his original vibraphone compositions and improvisations for solo drumset. Chris can also be found freelancing around Denver as a hired gun for jazz groups, chamber ensembles, and various bands that require phat beats. Chris has performed at the Brown Palace, the Mercury Cafe, Lost Lake, the Lion's Lair, the King Center, the Newman Center, Forest Room 5, and the Savoy Ballroom. His original compositions have been performed by Witches and Science, Space Force, the Matt Smiley trio, Nebula Ensemble, and the Colorado State Jazz Combo I.`;
 
-const freshies = require('./assets/freshies.png');
-const gamelan = require('./assets/gamelan.png');
-const solo = require('./assets/solo.png');
-const spaceforce = require('./assets/spaceforce.png');
+const freshies = require('./assets/bands/freshies.png');
+const gamelan = require('./assets/bands/gamelan.png');
+const spaceforce = require('./assets/bands/spaceforce.png');
+const solo = require('./assets/bands/solo.png');
 
 export const MUSIC_DATA = [
   {

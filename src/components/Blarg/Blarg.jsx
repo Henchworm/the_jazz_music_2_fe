@@ -3,7 +3,7 @@ import { getBlargPosts } from '../../apiCalls';
 import Post from './Post/Post';
 import './Blarg.css';
 
-const chrisblog = require('../../assets/chrisblog.png');
+const chrisblog = require('../../assets/pages/chrisblog.png');
 
 function Blarg() {
   const [blargPosts, setBlargPosts] = useState([]);

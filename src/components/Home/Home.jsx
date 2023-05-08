@@ -1,7 +1,7 @@
 import { getDisplayDay, getDisplayDate, getMilitaryDisplayTime, getStandardDisplayTime } from '../../helpers';
 import './Home.css';
 
-const chrishome = require('../../assets/chrishome.png');
+const chrishome = require('../../assets/pages/chrishome.png');
 
 function Home({ nextGig, loading, error }) {
   const { band_name, date, details, link, venue } = nextGig;

@@ -3,12 +3,12 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { HEADER_BIO_TEXT } from '../../constants';
 import './Header.css';
 
-const hamburger = require('../../assets/hamburger.png');
-const hamx = require('../../assets/hamx.png');
-const bandcamp = require('../../assets/bandcamp.png')
-const github = require('../../assets/github.png');
-const insta = require('../../assets/instagram.png');
-const youtube = require('../../assets/youtube.png');
+const hamburger = require('../../assets/icons/hamburger.png');
+const hamx = require('../../assets/icons/hamx.png');
+const bandcamp = require('../../assets/icons/bandcamp.png');
+const github = require('../../assets/icons/github.png');
+const insta = require('../../assets/icons/instagram.png');
+const youtube = require('../../assets/icons/youtube.png');
 
 function Header() {
   const [expanded, setExpanded] = useState(false);

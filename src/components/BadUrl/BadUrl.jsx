@@ -1,6 +1,6 @@
 import './BadUrl.css';
 
-const chrisPet = require('../../assets/badurl.png');
+const chrisPet = require('../../assets/pages/badurl.png');
 
 function BadUrl() {
   return (
