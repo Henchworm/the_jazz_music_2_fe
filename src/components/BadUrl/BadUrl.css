@@ -1,0 +1,19 @@
+.badurl-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.badurl-section img {
+  border-radius: 2rem;
+  width: 30rem;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 32rem) {
+  .badurl-section img {
+    width: 20rem;
+  }
+}
