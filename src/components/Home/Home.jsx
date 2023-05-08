@@ -1,4 +1,4 @@
-import { getDisplayDay, getDisplayDate, getMilitaryDisplayTime, getStandardDisplayTime } from '../../helpers';
+import { getDisplayDay, getDisplayDate, getStandardDisplayTime } from '../../helpers';
 import './Home.css';
 
 const chrishome = require('../../assets/pages/chrishome.png');
