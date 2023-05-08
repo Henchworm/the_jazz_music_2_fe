@@ -38,7 +38,8 @@ function Blarg() {
           />
         )
       });
-      return displayPosts;
+      // returns displayPosts in reverse chronological order, so that most recent is first
+      return displayPosts.toReversed();
     } else if (!loading && !error && !blargPosts.length) {
       return <h1>No blog posts, yet!</h1>
     } else {
