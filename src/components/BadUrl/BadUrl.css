@@ -12,6 +12,23 @@
   transition: 0.25s;
 }
 
+.badurl-section a {
+  color: #670eb8;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.badurl-section a:hover {
+  letter-spacing: 0.1rem;
+  transition: 0.25s;
+}
+
+.badurl-section a:link,
+.badurl-section a:visited
+ {
+  color: #670eb8;
+}
+
 @media screen and (max-width: 32rem) {
   .badurl-section img {
     width: 20rem;
