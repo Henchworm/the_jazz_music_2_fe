@@ -5,10 +5,10 @@ export const BLARG_PARAM = 'blargs';
 
 // page constants
 // header
-export const HEADER_BIO_TEXT = '...a sentence about Chris';
+export const HEADER_BIO_TEXT = '...percussionist, composer, improviser.';
 
 // about
-export const ABOUT_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.';
+export const ABOUT_TEXT = "Chris is a percussionist, composer, social media artist and software engineer. Born in Exeter, California, he quickly developed a taste for ripe oranges and avant garde jazz. After moving to Fort Collins to enroll in the prestigious Colorado State Percussion Studio, Chris found a home among several musical circles in Colorado's Front Range. Chris has collaborated with the improvisational collective Le Secret, Gamelan Tunas Mekar, The Matt Smiley Quartet, Space Force, the Freshman Philosophy Majors, Trio Cribonis, the Nebula Ensemble, and chamber group Witches & Science. Chris's playing and compositions are informed by the jazz tradition, bird sounds, contemporary Western art music, unsettling frequencies, and the music of Indonesia.";
 
 // music
 const FRESHIE_DESC = `The Freshman Philosophy Majors hail from Denver, Colorado, where they perform demented original music from the minds of Chris Hewitt (drums), Tim Sanchez (bass), and Chase Hildebrandt (keys). All graduates from Colorado State University's prestigious percussion department, the trio is known for enchanting raps, driving beats and extreme silliness.`;
