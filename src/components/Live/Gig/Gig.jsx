@@ -5,9 +5,9 @@ import './Gig.css';
 function Gig({band, date, details, link, venue}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  let infoBtnText = 'More Info';
+  let infoBtnText = 'Show Details';
   if (isExpanded) {
-    infoBtnText = 'Hide Info';
+    infoBtnText = 'Hide Details';
   }
 
   const handleInfoClick = () => {
@@ -34,7 +34,7 @@ function Gig({band, date, details, link, venue}) {
           </div>
           <div className='button-container'>
             <button onClick={handleInfoClick}>{infoBtnText}</button>
-            <button onClick={handleTicketClick}>Tickets</button>
+            <button onClick={handleTicketClick}>More Info</button>
           </div>
         </div>
         {isExpanded && <div className='more-info'>

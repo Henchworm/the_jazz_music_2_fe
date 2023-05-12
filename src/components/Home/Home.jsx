@@ -22,7 +22,7 @@ function Home({ nextGig, loading, error }) {
           <span><b>Venue: </b>{venue}</span>
           <span><b>Date: </b>{`${getDisplayDay(date)} - ${getDisplayDate(date)}`}</span>
           <span><b>Time: </b>{getStandardDisplayTime(date)}</span>
-          <button onClick={handleClick}>Get Tickets!</button>
+          <button onClick={handleClick}>More Info</button>
       </>
       );
     } else if (!loading && !error && !nextGig.id) {
